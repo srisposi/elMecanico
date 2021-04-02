@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
+    <title>El Mecánico</title>
+    <link rel="stylesheet" href="../css/styles.css"><!-- Link de la hoja de estilos css -->
+</head>
+
+<body>
+        <!-- Estructura del body -->
+    <header class="header"><!-- Encabezado donde tendremos el logotipo, nombre, un buscador y la barra de navegación -->
+        <div class="header__logo">
+            <img src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> <!-- logo del negocio -->    
+        </div>
+        <div class="header__nabvar"> <!-- Div para los elementos de navegacion -->
+            <nav>
+                <ul class="header__nabvar--ul">
+                    <li><a class="header__navbar--a" href="../index.html">Inicio</a></li>
+                    <li><a class="header__navbar--a" href="registrar.html">Registrar</a></li>
+                    <li><a class="header__navbar--a" href="iniciar-sesion.html">Iniciar Sesión</a></li>
+                    <li><a class="header__navbar--a" href="precios.html">Precios</a></li>
+                    <li><a class="header__navbar--a" href="historia.html">Historia</a></li>
+                    <li><a class="header__navbar--a" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a class="header__navbar--a" href="contacto.html">Contacto</a></li>        
+                </ul>                
+            </nav>
+        </div>
+        <div class="header__form">
+            <form action="" method=""><!-- Botón para búsquedas -->		    
+                <input type="search" placeholder="Search...">		    	
+                <button>Search</button>
+            </form>    
+        </div>
+    </header>
+
+    <main class="iniciarSesion__contenedor--grid">
+        <div class="iniciarSesion__titulo--grid">
+            <h1>Iniciar Sesión</h1>
+        </div>
+        <section class="iniciarSesion__formulario--grid"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
+            <article class="sectionSesion">
+                <form action="/action_page.php">
+                    <div class="articleSesion__div1">
+                        <label for="iusuario">Ingresar Usuario:</label><br>
+                        <input type="text" id="iusuario" name="iusuario" value="" placeholder="Ingrese Usuario"><br>
+                    </div>
+                    <div class="articleSesion__div2">
+                        <label for="ipassword">Ingresar Contraseña:</label><br>
+                        <input type="password" id="ipassword" name="ipassword" value="" placeholder="Ingrese Contraseña"><br><br>
+                    </div>
+                    <div class="articleSesion__button">
+                        <input  type="submit" value="Iniciar">
+                    </div>
+                </form> 
+            </article>
+        </section>
+        <section class="iniciarSesion__imagen--grid">
+            <article class="body__sectionSesion--img">
+                <img src="../img/estacionamiento.jpg" alt="Imagen Inicio de Sesión" > <!-- Imagen de inicio de sesión -->
+            </article>
+        </section>  
+    </main>
+
+    <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
+        <div>
+            <h2 class="footer__name">El Mecánico</h2><!-- Título del sitio web -->
+        </div>
+        <div class="footer__redes"><!-- div para las redes de la empresa -->
+            <div class="footer__redes--navbar">
+                <h3>Redes Sociales:    </h3>
+                <ul class="footer__redes--navbar">
+                    <li> <img src=../img/instagram.svg alt="instagram" height="25" weight="25"><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+                    <li><img src=../img/facebook.svg alt="facebook" height="25" weight="25"><a target="_blank" href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><img src=../img/twitter.svg alt="twitter" height="25" weight="25"><a target="_blank" href="https://twitter.com/?lang=es">Twitter</a></li>
+                    <li><img src=../img/whatsapp.svg alt="whatsapp" height="25" weight="25"><a target="_blank" href="https://www.whatsapp.com/?lang=es">WhatsApp</a></li>        
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright"><!-- div para información del realizador y derechos -->
+            <p>2021 - Hecho por <a href="https://www.linkedin.com/in/sergio-daniel-risposi-377a73155/"> Risposi, Sergio Daniel</a> Derechos reservados</p>
+        </div>        
+    </footer>
+</body>
+</html>    
