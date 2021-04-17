@@ -39,7 +39,7 @@
 
     <main class="container iniciarSesion__contenedor--grid">
         <div class="iniciarSesion__titulo--grid">
-            <h1>Iniciar Sesión</h1>
+            <h1 data-toggle="tooltip" title="Este es el inicio de Sesión">Iniciar Sesión</h1>
         </div>
         <section class="container"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
             <div class="row">
@@ -61,19 +61,26 @@
                             <label for="ingresarPassword" class="sr-only">Password</label>
                             <input type="password" class="form-control" id="ingresarPassword" placeholder="Ingrear Contraseña">
                         </div>
-
                     </form>    
                     <div>
                         <button type="submit" class="btn btn-primary mb-2">Iniciar</button>
                     </div>
                 </article>            
                 <article class="col-7">
-                    <img src="../img/estacionamiento.jpg" alt="Imagen Inicio de Sesión" > <!-- Imagen de inicio de sesión -->
+                    <img 
+                    src="../img/estacionamiento.jpg" 
+                    alt="Imagen Inicio de Sesión" 
+                    data-toggle="popover"
+                    data-placemente="top"
+                    title="Popover Imagen"
+                    data-content="Un popover de la imagen Iniciar Sesión"
+                    > <!-- Imagen de inicio de sesión -->
                 </article>    
             </div>
         </section>  
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>    
+        <script src="../js/scripts.js" ></script>
     </main>
 
     <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
     <title>El Mecánico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css"><!-- Link de la hoja de estilos css -->
 </head>
 
-<body>
+<body class="background">
         <!-- Estructura del body -->
     <header class="header"><!-- Encabezado donde tendremos el logotipo, nombre, un buscador y la barra de navegación -->
         <div class="header__logo">
@@ -61,7 +62,7 @@
                         <input class="body__form" type="password" id="repetirpassword" name="repetipassword" value="" placeholder="Repetir Contraseña"><br><br>
                     </div>
                     <div class="sectionRegistrar__article--div5">
-                        <input class="body__form" type="submit" value="Registrar"><br>
+                        <input class="body__form" type="submit" data-target="#modalRegistrar" data-toggle="modal" value="Registrar">
                     </div>
 
                 </form>     
@@ -75,14 +76,55 @@
         <setion class="contenedorRegistrar__soporte--grid">
             <div class="contenedorRegistrar__soporte--flex">
                 <label for="soporte">Soporte Tecnico</label>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure odio sequi sit recusandae! Laudantium cum quae excepturi rerum distinctio? Quisquam earum unde nihil quas, molestias, ipsam architecto dolorum dolore error nemo rerum commodi consequatur, dolorem veritatis inventore sed totam et eos delectus porro fugiat aperiam vitae? Blanditiis quaerat maxime impedit distinctio ut autem maiores dignissimos accusantium ipsa, ab suscipit architecto eaque minus, dolorem similique quas facilis sint recusandae quia. Aliquam a tempora doloremque dolorem recusandae earum eos commodi architecto ducimus nam eaque molestiae sunt esse corrupti et laboriosam maxime, fugiat accusantium rem unde placeat. Sunt dolorem quo in enim rem.
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseSoporte" role="button" aria-expanded="false" aria-controls="collapseSoporte">
+                    Mostrar Ayuda
+                    </a>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSoporte" aria-expanded="false" aria-controls="collapseSoporte">
+                    Ocultar Ayuda
+                    </button>
                 </p>
+                <div class="collapse" id="collapseSoporte">
+                <div class="card card-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure odio sequi sit recusandae! Laudantium cum quae excepturi rerum distinctio? Quisquam earum unde nihil quas, molestias, ipsam architecto dolorum dolore error nemo rerum commodi consequatur, dolorem veritatis inventore sed totam et eos delectus porro fugiat aperiam vitae? Blanditiis quaerat maxime impedit distinctio ut autem maiores dignissimos accusantium ipsa, ab suscipit architecto eaque minus, dolorem similique quas facilis sint recusandae quia. Aliquam a tempora doloremque dolorem recusandae earum eos commodi architecto ducimus nam eaque molestiae sunt esse corrupti et laboriosam maxime, fugiat accusantium rem unde placeat. Sunt dolorem quo in enim rem.
+                </div>
+                </div>
             </div>            
         </setion>
     </main>
 
+    
 
-    <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
+        <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    </button>
+    
+    <!-- The Modal -->
+    <div class="modal" id="modalRegistrar" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Registro Exitoso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Su registro es éxitoso!!!.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+        </div>
+    </div>
+    </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>     
+
+
+
+        <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
         <div>
             <h2 class="footer__name">El Mecánico</h2><!-- Título del sitio web -->
         </div>
