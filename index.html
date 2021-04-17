@@ -6,28 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon/elmecanico.ico"><!-- Link del icono -->
     <title>El Mecánico</title>
-    <link rel="stylesheet" href="css/styles.css"><!-- Link de la hoja de estilos css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link de la hoja de estilos css -->
 </head>
 
-<body>
+<body class="background"> 
     <!-- Estructura del index -->
     <header  class="header"><!-- Encabezado donde tendremos el logotipo, nombre, un buscador y la barra de navegación -->
         <div class="header__logo">
-            <img  src="img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> <!-- logo del negocio -->    
+            <img  class="img-fluid" src="img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> <!-- logo del negocio -->    
         </div>
-        <div class="header__nabvar"> <!-- Div para los elementos de navegacion -->
-            <nav> 
-                <ul class="header__nabvar--ul">
-                    <li><a class="header__navbar--a" href="index.html">Inicio</a></li>
-                    <li><a class="header__navbar--a" href="pages/registrar.html">Registrar</a></li>
-                    <li><a class="header__navbar--a" href="pages/iniciar-sesion.html">Iniciar Sesión</a></li>
-                    <li><a class="header__navbar--a" href="pages/precios.html">Precios</a></li>
-                    <li><a class="header__navbar--a" href="pages/historia.html">Historia</a></li>
-                    <li><a class="header__navbar--a" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a class="header__navbar--a" href="pages/contacto.html">Contacto</a></li>        
-                </ul>                
-            </nav>
-        </div>
+        <div class="container">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/registrar.html">Registrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/iniciar-sesion.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         <div class="header__form">    
             <form action="" method=""><!-- Botón para búsquedas -->		    
                 <input type="search" placeholder="Search...">		    	
@@ -36,28 +50,31 @@
         </div>
     </header>
 
+      
     <!-- Principal donde se verá el contenido de cada página con sus secciones y artículos-->
-    <main class="background">
-        <section class="grid__contenedor">
-            
-                <h1>Estacionamiento "El Meánico"</h1>
-            
+    <main class="container">
+        <h1>Estacionamiento "El Meánico"</h1>
+        <section class="row">    
+            <div class="col-sm-4">
                 <!-- Texto Inicial -->
                 <p>Bienvenidos al mejor estacionamiento 
                 de la ciudad dónde podrá descansar 
                 tranquilo tanto su usted como 
                 la seguridad de su auto.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsa totam soluta doloribus ut qui a laudantium deserunt velit cum alias similique veritatis, sequi ducimus quaerat amet voluptates fuga ullam itaque aliquam suscipit, quod reiciendis facilis. Tempora vitae blanditiis nostrum autem deleniti dignissimos aut tenetur voluptate officia, veniam laudantium esse vel qui! Nostrum iure commodi facilis, consectetur consequatur dolorum, vitae quas architecto rerum qui doloremque cupiditate corrupti adipisci corporis? Illum, aliquid ullam. Similique ipsa ad porro hic quasi quis nulla harum sit incidunt totam aperiam error modi nesciunt a exercitationem voluptatem unde, voluptate repudiandae dolore accusantium iusto voluptatibus libero! Blanditiis aliquam, nemo quis eum incidunt ut temporibus assumenda illum unde tempore voluptates ducimus nesciunt beatae doloribus. Culpa veritatis placeat assumenda corporis magnam? Autem minus, sunt nostrum dignissimos sapiente odit aspernatur? Delectus corrupti omnis consequatur! Dicta at, tenetur suscipit ut quae voluptas iure, corporis eius maxime nostrum nam eaque similique ipsum doloribus assumenda cum odit molestias perferendis totam hic omnis ullam aspernatur laborum inventore! Velit dolor dicta natus tenetur saepe tempora eum vel reprehenderit maxime ea vero consequuntur voluptatum, odit obcaecati repellat harum? Accusamus nesciunt id aut! Eum provident sit, illo possimus doloribus culpa aut pariatur esse molestiae eius tempora tempore?</p>
+            </div>
+            <div class="col-sm-8">
                 <!-- Video Presentación -->
                 <iframe  src="https://www.youtube.com/embed/s8UGdBr0RFg" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-                <!-- imagen del index -->
-                <img class="body_image--position"  src="img/estacionamiento.jpg" alt="Imagen Index"> 
-                        
-        </section>    
-           
+                gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+            <div class="col">    <!-- imagen del index -->
+                <img class="img-fluid body_image--position"  src="img/estacionamiento.jpg" alt="Imagen Index"> 
+            </div>    
+        </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>    
     </main>    
 
     <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->

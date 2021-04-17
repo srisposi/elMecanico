@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
     <title>El Mecánico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css"><!-- Link de la hoja de estilos css -->
 </head>
 
-<body>
+<body class="background">
         <!-- Estructura del body -->
     <header class="header"><!-- Encabezado donde tendremos el logotipo, nombre, un buscador y la barra de navegación -->
         <div class="header__logo">
@@ -36,32 +37,43 @@
         </div>
     </header>
 
-    <main class="iniciarSesion__contenedor--grid">
+    <main class="container iniciarSesion__contenedor--grid">
         <div class="iniciarSesion__titulo--grid">
             <h1>Iniciar Sesión</h1>
         </div>
-        <section class="iniciarSesion__formulario--grid"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
-            <article class="sectionSesion">
-                <form action="/action_page.php">
-                    <div class="articleSesion__div1">
-                        <label for="iusuario">Ingresar Usuario:</label><br>
-                        <input type="text" id="iusuario" name="iusuario" value="" placeholder="Ingrese Usuario"><br>
+        <section class="container"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
+            <div class="row">
+                <article class="col-5">
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <label for="ingresarUsuario" class="sr-only">Ingresar Usuario</label>
+                            <input type="text" readonly class="form-control-plaintext" placeholder="Ingrear Usuario" id="ingresarUsuario" value="ingresar Usuario">
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="ingresarPassword" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="ingresarPassword" placeholder="ingresarUsuario">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="ingresarPassword" class="sr-only">ingresarPassword</label>
+                            <input type="text" readonly class="form-control-plaintext" placeholder="Ingrear Contraseña" id="ingresarPassword" value="ingresar Contraseña">
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="ingresarPassword" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="ingresarPassword" placeholder="Ingrear Contraseña">
+                        </div>
+
+                    </form>    
+                    <div>
+                        <button type="submit" class="btn btn-primary mb-2">Iniciar</button>
                     </div>
-                    <div class="articleSesion__div2">
-                        <label for="ipassword">Ingresar Contraseña:</label><br>
-                        <input type="password" id="ipassword" name="ipassword" value="" placeholder="Ingrese Contraseña"><br><br>
-                    </div>
-                    <div class="articleSesion__button">
-                        <input  type="submit" value="Iniciar">
-                    </div>
-                </form> 
-            </article>
-        </section>
-        <section class="iniciarSesion__imagen--grid">
-            <article class="body__sectionSesion--img">
-                <img src="../img/estacionamiento.jpg" alt="Imagen Inicio de Sesión" > <!-- Imagen de inicio de sesión -->
-            </article>
+                </article>            
+                <article class="col-7">
+                    <img src="../img/estacionamiento.jpg" alt="Imagen Inicio de Sesión" > <!-- Imagen de inicio de sesión -->
+                </article>    
+            </div>
         </section>  
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>    
     </main>
 
     <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
