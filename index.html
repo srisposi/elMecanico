@@ -135,3 +135,26 @@
     </footer>
 </body>
 </html>
+
+<!-- Ejemplo Each para el poryecto -->
+<!-- @each $red-social in twitter, instagram, facebook {
+  ##{$red-social}-icon { 
+        Background-image:  
+         url('/images/#{$red-social}.png');
+   }
+} /
+ -->
+
+ <!-- Ejemplo de Mapeo para el proyecto -->
+<!-- 
+$redes:(
+        twitter: #55acee,
+        facebook: #3a5795,
+        send-mail: #C25E30
+); 
+@each $clave, $valor in $redes {
+   .btn--#{$clave} {
+       background-color: $valor;
+   }
+}
+ -->
