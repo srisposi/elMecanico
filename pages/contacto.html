@@ -11,30 +11,44 @@
 </head>
 
 <body class="background">
-        <!-- Estructura del body -->
-    <header class="header"><!-- Encabezado donde tendremos el logotipo, nombre, un buscador y la barra de navegación -->
-        <div class="header__logo">
-            <img src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> <!-- logo del negocio -->    
-        </div>
-        <div class="header__nabvar"> <!-- Div para los elementos de navegacion -->
-            <nav>
-                <ul class="header__nabvar--ul">
-                    <li><a class="header__navbar--a" href="../index.html">Inicio</a></li>
-                    <li><a class="header__navbar--a" href="registrar.html">Registrar</a></li>
-                    <li><a class="header__navbar--a" href="iniciar-sesion.html">Iniciar Sesión</a></li>
-                    <li><a class="header__navbar--a" href="precios.html">Precios</a></li>
-                    <li><a class="header__navbar--a" href="historia.html">Historia</a></li>
-                    <li><a class="header__navbar--a" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a class="header__navbar--a" href="contacto.html">Contacto</a></li>        
-                </ul>                
-            </nav>
-        </div>
-        <div class="header__form">
-            <form action="" method=""><!-- Botón para búsquedas -->		    
-                <input type="search" placeholder="Search...">		    	
-                <button>Search</button>
-            </form>    
-        </div>
+    <header><!-- logo del negocio -->
+        <nav class="navbar navbar-expand-lg header__nav">
+            <a class="navbar-brand">
+                <img  class="img-fluid header__logo" src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> 
+            </a>El Mecánico
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"><!-- Links de navegación -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrar.html">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciar-sesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0"><!-- Formulario para buscar -->
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
     </header>
 
     <main class="contenedorContacto__grid">
@@ -56,15 +70,15 @@
                         <label for="edad"></label>
                         <div class="dropdown">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                              Seleccione su Edad
+                            Seleccione su Edad
                             </button>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">18-25</a>
-                              <a class="dropdown-item" href="#">26-35</a>
-                              <a class="dropdown-item" href="#">36-45</a>
-                              <a class="dropdown-item" href="#">Mayores de 45</a>
+                            <a class="dropdown-item" href="#">18-25</a>
+                            <a class="dropdown-item" href="#">26-35</a>
+                            <a class="dropdown-item" href="#">36-45</a>
+                            <a class="dropdown-item" href="#">Mayores de 45</a>
                             </div>
-                          </div>
+                        </div>
                         <!-- <select class="body__form" name="edad" id="edad">
                             <option value="1">18-25</option> 
                             <option value="2">26-35</option>
@@ -107,9 +121,7 @@
                     <input id="article__div--buttom2" class="body__form" type="reset" name="limpiar" id="limpiar" value="Limpiar">   
                 </form>
             </article>
-        </section>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>     
+        </section>     
     </main>
 
     <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
@@ -131,6 +143,8 @@
             <p>2021 - Hecho por <a href="https://www.linkedin.com/in/sergio-daniel-risposi-377a73155/"> Risposi, Sergio Daniel</a> Derechos reservados</p>
         </div>        
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

@@ -7,6 +7,9 @@
 .background {
   background-color: blueviolet; }
 
+/* .background--image{
+        background-image: url("https://i.blogs.es/c3e445/multi-storey-car-park-2705368_960_720/1366_2000.jpg");
+}*/
 /* RESETEO */
 * {
   margin: 0px;
@@ -16,56 +19,36 @@ html {
   font-size: 62.5%; }
 
 /* Estilo del header */
-.header {
+.header nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20vh;
-  display: grid;
   z-index: 1;
-  grid-template-columns: repeat(15, auto);
-  grid-template-rows: 62px auto auto;
-  justify-items: center;
-  gap: 1rem;
   background: #7fdcf0;
   background: linear-gradient(118deg, #7fdcf0 4%, #78ceec 37%, #1073a3 43%, #6fbce7 70%, #5588d8 73%, #211fbb 89%);
   border: 4px solid black;
   font-size: medium;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  /* Estilo para el 1er hijo del header */
-  /* Estilo para el 2do hijo del header */
-  /* Estilo para el 3er hijo del header */
-  /* Estilo de letra y color para los elementos de navegación */
-  /* Estilo para eliminar las viñetas de todos el proyecto*/
-  /*Estilo para eliminar el subrayado*/ }
-  .header__logo {
-    border: 3px solid black;
-    padding: 1px;
-    margin: 2px;
-    grid-column: 1/2;
-    align-items: center;
-    /*  transform: rotate(720deg);
-        transition: all 3s;
-    */ }
-  .header__form {
-    margin: 2px;
-    grid-column: 12/14;
-    align-items: center;
-    grid-row: 2; }
-  .header__nabvar {
-    grid-column: 5/11;
-    grid-row: 3;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif; }
-  .header__nabvar--ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    justify-content: space-evenly; }
-  .header__navbar--a {
-    text-decoration: none; }
+  font-weight: bold; }
+
+.header__nav {
+  /*         position: fixed;
+ */
+  z-index: 1;
+  background: #7fdcf0;
+  background: linear-gradient(118deg, #7fdcf0 4%, #78ceec 37%, #1073a3 43%, #6fbce7 70%, #5588d8 73%, #211fbb 89%);
+  border: 4px solid black;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
+
+/* Estilo para el logo */
+.header__logo:hover {
+  border: 3px solid black;
+  padding: 1px;
+  margin: 2px;
+  grid-column: 1/2;
+  align-items: center;
+  transform: rotate(720deg);
+  transition: all 3s; }
 
 /* Fórmulas SASS */
 .btn--twitter {
@@ -87,8 +70,19 @@ a {
   /*Margen a los enlaces para separarlos*/ }
 
 /* ================================================================= */
+/* Animación */
+@keyframes animacion {
+  from { }
+  to {
+    /* probar propiedades */
+    transform: skewY(25deg); } }
+
+/* configuracion inicial */
+.animame {
+  animation: animate__rubberBand 1s linear 3s infinite alternate; }
+
 /* Estilo para elementos en todo el documento  */
-h1 {
+h1:hover {
   font-size: 4rem;
   font-family: "Roboto", sans-serif;
   margin-top: 21rem;
@@ -97,7 +91,16 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: 'Roboto Slab', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 h3 {
   display: inline;
@@ -632,6 +635,7 @@ h3 {
   gap: 1rem; }
 
 .footer__name {
+  color: white;
   margin: 2px;
   padding: 10px;
   grid-column: 2/4;
@@ -639,20 +643,23 @@ h3 {
   align-items: center; }
 
 .footer__redes {
+  color: white;
   margin: 2px;
   padding: 10px;
   grid-column: 1/13;
-  grid-row: 3;
+  grid-row: 1;
   align-items: center; }
 
 .footer__copyright {
+  color: white;
   margin: 2px;
   padding: 10px;
-  grid-column: 11/15;
-  grid-row: 2;
+  grid-column: 3/11;
+  grid-row: 3;
   align-items: center; }
 
 .footer__redes--navbar {
+  color: white;
   display: flex;
   align-items: center;
   list-style-type: none;
