@@ -122,10 +122,10 @@
             <div class="footer__redes--navbar">
                 <h3>Redes Sociales:    </h3>
                 <ul class="footer__redes--navbar">
-                    <li> <img src=img/instagram.svg alt="instagram" height="25" weight="25"><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
-                    <li><img src=img/facebook.svg alt="facebook" height="25" weight="25"><a target="_blank" href="https://es-la.facebook.com/">Facebook</a></li>
-                    <li><img src=img/twitter.svg alt="twitter" height="25" weight="25"><a target="_blank" href="https://twitter.com/?lang=es">Twitter</a></li>
-                    <li><img src=img/whatsapp.svg alt="whatsapp" height="25" weight="25"><a target="_blank" href="https://www.whatsapp.com/?lang=es">WhatsApp</a></li>        
+                    <li> <img class="btn--instagram" src="/img/instagram.svg" alt="instagram" height="25" weight="25"><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+                    <li><img class="btn--facebook" src="/img/facebook.svg" alt="facebook" height="25" weight="25"><a target="_blank" href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><img class="btn--twitter" src="/img/twitter.svg" alt="twitter" height="25" weight="25"><a target="_blank" href="https://twitter.com/?lang=es">Twitter</a></li>
+                    <li><img class="btn--whatsapp" src="/img/whatsapp.svg" alt="whatsapp" height="25" weight="25"><a target="_blank" href="https://www.whatsapp.com/?lang=es">WhatsApp</a></li>        
                 </ul>
             </div>
         </div>
@@ -135,26 +135,3 @@
     </footer>
 </body>
 </html>
-
-<!-- Ejemplo Each para el poryecto -->
-<!-- @each $red-social in twitter, instagram, facebook {
-  ##{$red-social}-icon { 
-        Background-image:  
-         url('/images/#{$red-social}.png');
-   }
-} /
- -->
-
- <!-- Ejemplo de Mapeo para el proyecto -->
-<!-- 
-$redes:(
-        twitter: #55acee,
-        facebook: #3a5795,
-        send-mail: #C25E30
-); 
-@each $clave, $valor in $redes {
-   .btn--#{$clave} {
-       background-color: $valor;
-   }
-}
- -->
