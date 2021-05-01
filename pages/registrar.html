@@ -62,14 +62,15 @@
         </nav>
     </header
 
-    <main class="contenedorRegistrar__grid">
-        <div class="contenedorRegistrar__grid--h1">
+    <main>
+        <div>
             <h1>Registrar</h1>
         </div>
         <!-- Comienzo de las secciones del sitio web que más adelante serán otras páginas del sitio-->
-        <section class="contenedorRegistrar__grid--section1"> <!-- Sección 1- Dónde se realiza el registro de usuarios-->
-            <article class="sectionRegistrar">
-                <form class="sectionRegistrar__article" action="/action_page.php"></form>
+        <section class="container"> 
+            <article class="row">
+                <div class="col-md-4">
+                    <form class="sectionRegistrar__article" action="/action_page.php"></form>
                     <div class="sectionRegistrar__article--div1">
                         <label for="iusuario">Ingresar Usuario:</label><br>
                         <input class="body__form" type="text" id="iusuario" name="iusuario" value="" placeholder="Ingrese un Usuario"><br>
@@ -90,18 +91,22 @@
                         <input class="body__form" type="submit" data-target="#modalRegistrar" data-toggle="modal" value="Registrar">
                     </div>
 
-                </form>     
+                    </form>            
+                </div>
+                <div class="col-md-7">
+                    <div>
+                        <img id="body_image--position" width="100%" src="../img/estacionamiento.jpg" alt="Imagen Registro" > <!-- Imagen del registro -->
+                    </div>    
+                </div>
             </article>
-        </section>     
-        <section class="contenedorRegistrar__grid--section2">
-            <div>
-                <img id="body_image--position" src="../img/estacionamiento.jpg" alt="Imagen Registro" > <!-- Imagen del registro -->
-            </div>    
         </section>
-        <setion class="contenedorRegistrar__soporte--grid">
-            <div class="contenedorRegistrar__soporte--flex">
-                <label for="soporte">Soporte Tecnico</label>
-                <p>
+    
+    
+        <setion class="container m-3 p-2">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="soporte">Soporte Tecnico</label>
+                    <p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseSoporte" role="button" aria-expanded="false" aria-controls="collapseSoporte">
                     Mostrar Ayuda
                     </a>
@@ -109,6 +114,7 @@
                     Ocultar Ayuda
                     </button>
                 </p>
+                </div>
                 <div class="collapse" id="collapseSoporte">
                 <div class="card card-body">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure odio sequi sit recusandae! Laudantium cum quae excepturi rerum distinctio? Quisquam earum unde nihil quas, molestias, ipsam architecto dolorum dolore error nemo rerum commodi consequatur, dolorem veritatis inventore sed totam et eos delectus porro fugiat aperiam vitae? Blanditiis quaerat maxime impedit distinctio ut autem maiores dignissimos accusantium ipsa, ab suscipit architecto eaque minus, dolorem similique quas facilis sint recusandae quia. Aliquam a tempora doloremque dolorem recusandae earum eos commodi architecto ducimus nam eaque molestiae sunt esse corrupti et laboriosam maxime, fugiat accusantium rem unde placeat. Sunt dolorem quo in enim rem.
