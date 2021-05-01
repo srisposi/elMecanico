@@ -6,143 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
     <title>El Mecánico</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css"><!-- Link de la hoja de estilos css -->
-</head>
 
-<body class="background">
-    <header><!-- logo del negocio -->
-        <nav class="navbar navbar-expand-lg header__nav">
-            <a class="navbar-brand">
-                <img  class="img-fluid header__logo" src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> 
-            </a>El Mecánico
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"><!-- Links de navegación -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./registrar.html">Registrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./iniciar-sesion.html">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./precios.html">Precios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./historia.html">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0"><!-- Formulario para buscar -->
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </header>
+    <!-- Material Design -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"  rel="stylesheet"/>
 
-    <main class="contenedorContacto__grid">
-        <div class="contenedorContacto__titulo--grid">
-            <h1>Contacto</h1>
+    <!-- Hoja de estilo CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body class="background"> 
+    <header class="container">
+        <!-- logo del negocio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header__nav">
+    <a class="navbar-brand  href="#">
+        <img  class="img-fluid header__logo" src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> 
+    </a>
+        <!-- Boton de collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <!-- Links de navegación -->
+        <div class="collapse navbar-collapse" id="#navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./registrar.html">Registrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./iniciar-sesion.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <section class="contenedorContacto__formulario--grid"><!-- Sección 6 - Dónde se pueden comunicar con el establecimiento-->
-            <article class="sectionContacto__article1"> 
-                <form action="">
-                    <div class="sectionContacto__article1--div1">
-                        <label for="de">Ingrese Su Nombre de contacto</label>
-                        <input class="body__form" type="text" name="de" id="de" placeholder="De:"><br><br>
-                    </div>
-                    <div class="sectionContacto__article1--div2">
-                        <label for="asunto">Ingrese el asunto correspondiente</label>
-                        <input class="body__form" type="text" name="asunto" id="asunto" placeholder="Asunto:"><br><br>
-                    </div>
-                    <div class="sectionContacto__article1--div3"><!-- Menú desplegable con las opciones posibles-->
-                        <label for="edad"></label>
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Seleccione su Edad
-                            </button>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">18-25</a>
-                            <a class="dropdown-item" href="#">26-35</a>
-                            <a class="dropdown-item" href="#">36-45</a>
-                            <a class="dropdown-item" href="#">Mayores de 45</a>
-                            </div>
+        
+    </nav>
+</header>
+
+    <main class="container">
+        <h1>Contacto</h1>
+        <section class="row m-2">
+            <article class="col-md-4 p4"> 
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Ingrese Su Nombre</span>
                         </div>
-                        <!-- <select class="body__form" name="edad" id="edad">
-                            <option value="1">18-25</option> 
-                            <option value="2">26-35</option>
-                            <option value="3">36-45</option>
-                            <option value="4">Mayores de 45</option>
-                        </select>  -->       
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <div class="sectionContacto__article1--div4"><!-- CheckBox con la cuota de cada miembro -->
-                        <label for="cuota">Cuota al día
-                        <input type="checkbox" name="cuota" id="cuota" value="1"/>    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
                     </div>
-                    <div class="sectionContacto__article1--div5"><!-- Radio buttom con el sexo del miembro -->
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" name="sexo" id="masculino" value="masculino"/>
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" name="sexo" id="femenino" value="femenino"/>
+                    <label for="basic-url">Your vanity URL</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                     </div>
-                </form> 
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">With textarea</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>        
+            </article>
+            <article class="col-md-7 p-4" id="map"><!-- Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167132768497!2d-58.383759084919674!3d-34.60373888045938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1619816684922!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </article>
         </section>    
-        <section class="contenedorContacto__textarea--grid">
-            <div class="sectionContacto__article2--div1">
-                <form action=""><!-- textarea para poder escribir el mensaje -->
-                    <label for="mensaje">Escriba aquí su mensaje</label><br>
-                    <textarea class="body__form" name="mensaje" id="mensaje" cols="50" rows="20" placeholder="Escriba aquí su mensaje"></textarea><br><br>
-                </form>
-            </div>
-        </section>
-        <section class="contenedorContacto__mapa--grid">
-            <!-- Enlace que conecta con google maps para mostrar la ubicación del lugar -->
-            <div class="sectionContacto__article2--div2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9035646818247!2d-58.38363868477027!3d-34.60659998045879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacfdc46695d%3A0xd92d47e988f65a76!2sMetrobus%20-%20Peron!5e0!3m2!1ses-419!2sar!4v1614927206351!5m2!1ses-419!2sar"
-                ; allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>    
-        <section class="contenedorContacto__form--grid">
-            <article class="sectionContacto__article3">
-                <form class="sectionContacto__article3--div" action="">
-                    <input id="article__div--buttom" class="body__form" type="submit" name="enviar" id="enviar" value="Enviar">
-                    <input id="article__div--buttom2" class="body__form" type="reset" name="limpiar" id="limpiar" value="Limpiar">   
-                </form>
-            </article>
-        </section>     
     </main>
 
-    <footer class="footer"><!-- pie de página de la web con redes sociales y copyright-->
-        <div>
-            <h2 class="footer__name">El Mecánico</h2><!-- Título del sitio web -->
-        </div>
-        <div class="footer__redes"><!-- div para las redes de la empresa -->
-            <div class="footer__redes--navbar">
-                <h3>Redes Sociales:    </h3>
-                <ul class="footer__redes--navbar">
-                    <li> <img src=../img/instagram.svg alt="instagram" height="25" weight="25"><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
-                    <li><img src=../img/facebook.svg alt="facebook" height="25" weight="25"><a target="_blank" href="https://es-la.facebook.com/">Facebook</a></li>
-                    <li><img src=../img/twitter.svg alt="twitter" height="25" weight="25"><a target="_blank" href="https://twitter.com/?lang=es">Twitter</a></li>
-                    <li><img src=../img/whatsapp.svg alt="whatsapp" height="25" weight="25"><a target="_blank" href="https://www.whatsapp.com/?lang=es">WhatsApp</a></li>        
-                </ul>
+    <footer class="page-footer bg-dark">
+        <div class="bg-succes">
+          <div class=container>
+            <div class="row py-4 d-flex align-items-center">
+  
+              <div class="col-md-12 text-center">
+                <a target="_blank" href="https://www.instagram.com/"<i class="fab fa-instagram text-white mr-4"></i> Instagram</a>
+                <a target="_blank" href="https://es-la.facebook.com/"<i class="fab fa-facebook text-white mr-4"></i> Facebook</a>
+                <a target="_blank" href="https://twitter.com/?lang=es/"<i class="fab fa-twitter text-white mr-4"></i> Twitter</a>
+                <a target="_blank" href="https://www.whatsapp.com/?lang=es"<i class="fab fa-whatsapp text-white mr-4"></i> WhatsApp</a>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="footer__copyright"><!-- div para información del realizador y derechos -->
-            <p>2021 - Hecho por <a href="https://www.linkedin.com/in/sergio-daniel-risposi-377a73155/"> Risposi, Sergio Daniel</a> Derechos reservados</p>
-        </div>        
-    </footer>
+  
+        <div class="container text-center text-md-left mt-5">
+          <div class="row">
+            <div class="col-md-4 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">Información</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias enim rerum quis omnis, officia ex, voluptatem itaque consequatur quia qui obcaecati accusamus atque cumque vitae nisi fugiat. Iure a obcaecati est deserunt magni voluptas quisquam nobis voluptatibus, eaque repellat corrupti sunt aperiam, sed, provident laudantium dolorum nisi debitis? Sit!</p>
+            </div>
+  
+            <div class="col-md-4 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+              <ul class="list-unstyled">
+                <li class="my-2"><i class="fas fa-home mr-3"> 9 de Julios</i></li>
+                <li class="my-2"><i class="far fa-envelope mr-3"> elmecanico@gmail.com</i></li>
+                <li class="my-2"><i class="fas fa-phone mr-3"> +5491166110033</i></li>
+                <li class="my-2"><i class="fas fa-print mr-3"> elmecanicodocumento@gmail.com</i></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">Links Importantes</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+              <ul class="list-unstyled">
+                <li class="my-2"><a href="./registrar.html"> Registro</a></li>
+                <li class="my-2"><a href="./preguntas-frecuentes.html"> Preguntas</a></li>
+                <li class="my-2"><a href="./precios.html"> Precios</a></li>
+                <li class="my-2"><a href="./contacto.html"> Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-copyright text-center py-3">
+          <p>&copy; Copyright
+            <a href="https://www.linkedin.com/in/sergio-daniel-risposi-377a73155/"> Diseñado por Risposi, Sergio Daniel</a>
+          </p>
+          <p></p>
+        </div>
+  
+      </footer>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
