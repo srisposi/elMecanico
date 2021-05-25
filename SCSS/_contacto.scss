@@ -1,6 +1,6 @@
 $font-primary: 'Roboto', sans-serif;
 .container{
-    height: 75vh;
+    height: 80vh;
     width: auto;
     justify-content: center;
     align-items:stretch;
@@ -15,5 +15,8 @@ $font-primary: 'Roboto', sans-serif;
         font-size: 14px;
         width: 100%;
     }
-    
+    section{
+        height: auto;
+        width: 100%;
+    }
 }

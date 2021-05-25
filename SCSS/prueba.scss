@@ -10,6 +10,8 @@
 @import "_operacion.scss";
 @import "_footer.scss";
 @import "_contacto.scss";
+@import "_registrar.scss";
+@import "_iniciar-sesion.scss";
 /* Definición de variables */
 $font-primary: 'Roboto', sans-serif;
 $padding-general: 1rem;
@@ -113,26 +115,6 @@ h3{
         .carousel-arrow-next{
             right: 2rem;
         } 
-    }
-}
-
-/* Modal */
-
-.modal{ 
-    &-header{
-    background-color: aqua;
-    }
-    &-body{
-        background-color: blue;
-        text-align: center;
-        
-        p{
-            font-size: large;
-            color: white;
-        }
-    }
-    &-footer{
-        background-color: darkblue;
     }
 }
 

@@ -20,6 +20,9 @@
 html {
   font-size: 62.5%; }
 
+.view {
+  height: 80vh; }
+
 /* Estilo del header */
 .header nav {
   position: fixed;
@@ -65,6 +68,7 @@ html {
 /* ================================================================= */
 /* ESTILO PARA EL FOOTER*/
 .page-footer {
+  margin: auto;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 15px; }
@@ -80,7 +84,7 @@ html {
     color: white; }
 
 .container {
-  height: 75vh;
+  height: 80vh;
   width: auto;
   justify-content: center;
   align-items: stretch; }
@@ -93,6 +97,53 @@ html {
   .container .form-control {
     font-size: 14px;
     width: 100%; }
+  .container section {
+    height: auto;
+    width: 100%; }
+
+.container {
+  height: 80vh;
+  width: auto;
+  justify-content: center;
+  align-items: stretch; }
+  .container .form-group .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+    .container .form-group .text--size .small--font {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 10px; }
+  .container .row button {
+    font-family: "Roboto", sans-serif;
+    background-color: #b22222;
+    color: white;
+    font-size: 14px; }
+  .container .modal-header {
+    background-color: black;
+    color: white; }
+  .container .modal-body {
+    background-color: grey;
+    text-align: center; }
+    .container .modal-body p {
+      font-size: large;
+      color: white; }
+  .container .modal-footer {
+    background-color: grey; }
+    .container .modal-footer .btn {
+      background-color: #b22222;
+      color: white; }
+  .container .row label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white; }
+  .container .collapse .collapse__text--font {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #b22222;
+    color: white; }
 
 /* Definición de variables */
 /* ================================================================= */
@@ -180,20 +231,6 @@ h3 {
       left: 2rem; }
     #carrusel .carousel-arrow .carousel-arrow-next {
       right: 2rem; }
-
-/* Modal */
-.modal-header {
-  background-color: aqua; }
-
-.modal-body {
-  background-color: blue;
-  text-align: center; }
-  .modal-body p {
-    font-size: large;
-    color: white; }
-
-.modal-footer {
-  background-color: darkblue; }
 
 /* Collapse */
 .collapse .card-body {
