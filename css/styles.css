@@ -4,16 +4,18 @@
 /* CDN de los fonts utilziados en el proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
 /* Import de las porciones de codigo en SASS */
-.background {
-  background-color: blueviolet; }
-
+/* .background{
+    background-color: blueviolet;
+}        
+ */
 /* .background--image{
         background-image: url("https://i.blogs.es/c3e445/multi-storey-car-park-2705368_960_720/1366_2000.jpg");
 }*/
 /* RESETEO */
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -22,22 +24,19 @@ html {
 .header nav {
   position: fixed;
   z-index: 1;
-  background: #7fdcf0;
-  background: linear-gradient(118deg, #7fdcf0 4%, #78ceec 37%, #1073a3 43%, #6fbce7 70%, #5588d8 73%, #211fbb 89%);
   border: 4px solid black;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold; }
 
 .header__nav {
-  /*         position: fixed;
- */
   z-index: 1;
-  background: #7fdcf0;
-  background: linear-gradient(118deg, #7fdcf0 4%, #78ceec 37%, #1073a3 43%, #6fbce7 70%, #5588d8 73%, #211fbb 89%);
+  background: #f10000;
+  background: radial-gradient(circle, #f10000 4%, #020024 25%, #cf0005 66%, #202124 88%);
   border: 4px solid black;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: white;
   font-weight: bold; }
 
 /* Estilo para el logo */
@@ -66,12 +65,34 @@ html {
 /* ================================================================= */
 /* ESTILO PARA EL FOOTER*/
 .page-footer {
-  color: white; }
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px; }
   .page-footer hr {
     width: 125px;
     height: 2px; }
-  .page-footer .container ul il {
+  .page-footer .container {
+    width: auto;
+    height: auto; }
+    .page-footer .container ul li a {
+      color: white; }
+  .page-footer p a {
     color: white; }
+
+.container {
+  height: 75vh;
+  width: auto;
+  justify-content: center;
+  align-items: stretch; }
+  .container .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+  .container .form-control {
+    font-size: 14px;
+    width: 100%; }
 
 /* Definición de variables */
 /* ================================================================= */

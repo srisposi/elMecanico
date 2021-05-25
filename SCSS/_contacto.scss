@@ -1,0 +1,19 @@
+$font-primary: 'Roboto', sans-serif;
+.container{
+    height: 75vh;
+    width: auto;
+    justify-content: center;
+    align-items:stretch;
+    .text--size{
+        font-size: 14px;
+        color:white;
+        text-align: left;
+        font-family: $font-primary;
+        align-items: center;
+    }
+    .form-control{
+        font-size: 14px;
+        width: 100%;
+    }
+    
+}
