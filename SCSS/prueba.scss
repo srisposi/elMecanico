@@ -12,19 +12,12 @@
 @import "_contacto.scss";
 @import "_registrar.scss";
 @import "_iniciar-sesion.scss";
+@import "_precios.scss";
 /* Definición de variables */
 $font-primary: 'Roboto', sans-serif;
 $padding-general: 1rem;
 
-
 /* ================================================================= */
-
-a {
-    margin: 10px;  /*Margen a los enlaces para separarlos*/
-}
-/* ================================================================= */
-
-
 /* Animación */
 @keyframes animacion {
     from { }
@@ -36,16 +29,16 @@ a {
   .animame {
      animation: animate__rubberBand 1s linear 3s infinite alternate;}
 /* Estilo para elementos en todo el documento  */
+a {
+    margin: 10px;  /*Margen a los enlaces para separarlos*/
+}
 h1{
     color: white;
     font-size: 4rem;
     font-family: $font-primary;
-    margin-top: 5rem;
-    margin-bottom: 0.5rem;
-    padding: $padding-general /2;
+    
     text-align: center;
-}
-
+} 
 h2 {
     font-family: 'Roboto Slab', sans-serif;
 /*     animation-duration: 2s;
@@ -66,7 +59,7 @@ h2 {
 h3{
     display: inline;
     text-align: left;
-    padding: 2*$padding-general;
+/*     padding: 2*$padding-general; */
 }
 
 /* Estilo de borde utilziado en varias secciones del sitio */
@@ -118,24 +111,6 @@ h3{
     }
 }
 
-/* Collapse */
-.collapse {
-    .card-body{
-    background-color: cornflowerblue;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-    }
-}
-
-/* ::placeholder{
-    background: violet;
-    color: black;
-} */
-
-/* ================================================================= */
-
 /* ================================================================= */
 /* ESTILO PARA INDEX */
 .navbar-dark .navbar-toggler {
@@ -146,37 +121,6 @@ h3{
   .navbar-dark .navbar-toggler  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-
-/* ================================================================= */
-
-/* ================================================================= */
-/* ESTILO PARA REGISTRAR */
-
-
-/* ================================================================= */
-
-/* ================================================================= */
-/* ESTILO PARA EL INICIO DE SESION */
-
-
-
-/* ================================================================= */
-
-/* ================================================================= */
-/* ESTILO PARA PRECIOS */
-.table{
-    color:white;
-    
-}
-.contenedorPrecios__parrafo--grid{
-    p{
-        margin: 2rem;
-        padding: 0.5rem;
-        text-align: center;
-        color:white;
-    }
-}
-
 /* ================================================================= */
 
 /* ================================================================= */
@@ -189,68 +133,48 @@ h3{
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
+    .body__article--img{
+        height: 60%;
+        width: 60%;
+        padding: 0.5rem;
+        margin: 2px;
+        border: 2px solid blue;    
+    }
+    p{
+        color: white;
+        height: 40%;
+        padding: 0.5rem;
+        margin: 2px;
+        text-align: left;
+        font-size: 2rem;    
+    }
 }
-
-.articleHistoria .body__article--img{
-    height: 60%;
-    width: 60%;
-    padding: 0.5rem;
-    margin: 2px;
-    border: 2px solid blue;
-
-}
-
-.articleHistoria p{
-    color: white;
-    height: 40%;
-    padding: 0.5rem;
-    margin: 2px;
-    text-align: left;
-    font-size: 2rem;
-}
-
 /* ================================================================= */
 
 /* ================================================================= */
 /* ESTILO PARA PREGUNTAS FRECUENTES */
-.articlePreguntas{
+.articlePreguntas {
     height: 80vh;
-    border: 4px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
     color: white;
-}
-
-.articlePreguntas .body__article--question{
-    margin: 2px;
-    border: 2px solid blue;
-}
-
-.articlePreguntas h2{
-    margin: 1rem;
-    padding: 0.5rem;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 3rem;
-}
-
-.articlePreguntas p{
-    margin: 1rem;
-    padding: 0.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    .body__article--question{
+        margin: 2px;
+        border: 2px solid #b22222;
+    }
+    h2{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-family: $font-primary;
+        font-size: 3rem;
+    }
+    p{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-family: $font-primary;
+        font-size: 1.5rem;
+    }
 }
 /* ================================================================= */
-
-/* ================================================================= */
-/* ESTILO PARA CONTACTO */
-/* .container {
-    width: 100%;
-    height: 25vh;
-
-} */
-
-/* ================================================================= */
-
-

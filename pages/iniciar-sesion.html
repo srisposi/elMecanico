@@ -64,46 +64,56 @@
         </nav>
     </header>
 
-    <main class="view container iniciarSesion__contenedor--grid">
-        <div class="iniciarSesion__titulo--grid">
-            <h1 data-toggle="tooltip" title="Este es el inicio de Sesión">Iniciar Sesión</h1>
-        </div>
-        <section class="container m-2"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
-            <div class="row">
-                <article class="col-5 p-4">
-                    <form>
-                        <div class="form-group mb-2  w-100">
-                            <label for="ingresarUsuario" class="sr-only">Ingresar Usuario</label>
-                            <input type="text" readonly class="form-control-plaintext" placeholder="Ingrear Usuario" id="ingresarUsuario" value="ingresar Usuario">
-                        </div>
-                        <div class="form-group mx-sm-3 mb-2">
-                            <label for="ingresarPassword" class="sr-only">Password</label>
-                            <input type="password" class="form-control" id="ingresarPassword" placeholder="ingresarUsuario">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="ingresarPassword" class="sr-only">ingresarPassword</label>
-                            <input type="text" readonly class="form-control-plaintext" placeholder="Ingrear Contraseña" id="ingresarPassword" value="ingresar Contraseña">
-                        </div>
-                        <div class="form-group mx-sm-3 m-2 p-3">
-                            <label for="ingresarPassword" class="sr-only">Password</label>
-                            <input type="password" class="form-control" id="ingresarPassword" placeholder="Ingrear Contraseña">
-                        </div>
-                    </form>    
-                    <div>
-                        <button type="submit" class="btn btn-primary mb-2">Iniciar</button>
+    <main class="container">
+        <h1 data-toggle="tooltip" title="Este es el inicio de Sesión">Iniciar Sesión</h1>
+        <section class="row m-2 justify-content-center"><!-- Sección 2- Dónde se realiza el inicio de sesión de usuarios registrados-->
+            <article class="col-sm-5 p4 justify-content-start">
+                <form>
+                    <div class="form-group text--size">
+                        <label for="ingresarUsuario">Ingresar Su Usuario</label>
+                        <input type="text" readonly class="form-control" placeholder="Ingrear Usuario" id="ingresarUsuario" value="ingresar Usuario">
                     </div>
-                </article>            
-                <article class="col-7 p-4">
-                    <img 
+                    <div class="form-group text--size">
+                        <label for="ingresarPassword">Ingresar Su Contraseña</label>
+                        <input type="text" readonly class="form-control" placeholder="Ingrear Contraseña" id="ingresarPassword" value="ingresar Contraseña">
+                    </div>
+                </form>    
+                    <div>
+                        <button type="submit" class="btn btn-primary mb-2" data-target="#modalIniciar" data-toggle="modal" value="IniciarSesion">Iniciar</button>
+                    </div>
+                        <!-- The Modal -->
+                    <div class="modal" id="modalIniciar" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Inicio de Sesión</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Su Inicio de Sesión es éxitoso!!!.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>            
+            <article class="col-sm-6">
+                <div>
+                    <img id="body_image--position" width="100%"
                     src="../img/estacionamiento.jpg" 
                     alt="Imagen Inicio de Sesión" 
                     data-toggle="popover"
                     data-placemente="top"
                     title="Popover Imagen"
                     data-content="Un popover de la imagen Iniciar Sesión"
-                    > <!-- Imagen de inicio de sesión -->
-                </article>    
-            </div>
+                > <!-- Imagen de inicio de sesión -->
+                </div>
+            </article>    
         </section>  
     </main>
 
