@@ -3,6 +3,7 @@
 /* Estilos Generales */
 /* CDN de los fonts utilziados en el proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 /* Import de las porciones de codigo en SASS */
 /* .background{
     background-color: blueviolet;
@@ -21,7 +22,8 @@ html {
   font-size: 62.5%; }
 
 .view {
-  height: 80vh; }
+  height: auto;
+  width: auto; }
 
 /* Estilo del header */
 .header nav {
@@ -84,92 +86,126 @@ html {
   .page-footer p a {
     color: white; }
 
-.container {
-  height: 80vh;
+.container--contacto {
+  height: auto;
   width: auto;
   justify-content: center;
   align-items: stretch; }
-  .container .text--size {
+  .container--contacto .text--size {
     font-size: 14px;
     color: white;
     text-align: left;
     font-family: "Roboto", sans-serif;
     align-items: center; }
-  .container .form-control {
-    font-size: 14px;
+  .container--contacto .form-control {
+    font-size: 10px;
     width: 100%; }
-  .container section {
+  .container--contacto section {
     height: auto;
     width: 100%; }
 
-.container {
-  height: 80vh;
+.container--registrar {
+  height: auto;
   width: auto;
   justify-content: center;
   align-items: stretch; }
-  .container .form-group .text--size {
+  .container--registrar .form-control .text--size {
     font-size: 14px;
     color: white;
     text-align: left;
     font-family: "Roboto", sans-serif;
     align-items: center; }
-    .container .form-group .text--size .small--font {
+    .container--registrar .form-control .text--size .small--font {
       font-family: "Roboto", sans-serif;
       color: white;
       font-size: 10px; }
-  .container .row button {
+  .container--registrar .row button {
     font-family: "Roboto", sans-serif;
     background-color: #b22222;
     color: white;
     font-size: 14px; }
-  .container .modal-header {
-    background-color: black;
-    color: white; }
-  .container .modal-body {
-    background-color: grey;
-    text-align: center; }
-    .container .modal-body p {
-      font-size: large;
-      color: white; }
-  .container .modal-footer {
-    background-color: grey; }
-    .container .modal-footer .btn {
-      background-color: #b22222;
-      color: white; }
-  .container .row label {
+  .container--registrar .row label {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: white; }
-  .container .collapse .collapse__text--font {
+  .container--registrar .modal-header {
+    background-color: black;
+    color: white; }
+  .container--registrar .modal-body {
+    background-color: grey;
+    text-align: center; }
+    .container--registrar .modal-body p {
+      font-size: large;
+      color: white; }
+  .container--registrar .modal-footer {
+    background-color: grey; }
+    .container--registrar .modal-footer .btn {
+      background-color: #b22222;
+      color: white; }
+  .container--registrar .collapse .collapse__text--font {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     background-color: #b22222;
     color: white; }
 
-.container {
-  height: 80vh;
+.container--iniciarsesion {
+  height: auto;
   width: auto;
   justify-content: center;
-  align-items: stretch; }
-  .container .text--size {
+  align-items: stretch;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  align-items: center; }
+  .container--iniciarsesion .text--size {
     font-size: 14px;
     color: white;
     text-align: left;
     font-family: "Roboto", sans-serif;
     align-items: center; }
+  .container--iniciarsesion .form-group .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+  .container--iniciarsesion .row button {
+    font-family: "Roboto", sans-serif;
+    background-color: #b22222;
+    color: white;
+    font-size: 14px; }
+  .container--iniciarsesion .row label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white; }
+  .container--iniciarsesion .modal-header {
+    background-color: black;
+    color: white; }
+  .container--iniciarsesion .modal-body {
+    background-color: grey;
+    text-align: center; }
+    .container--iniciarsesion .modal-body p {
+      font-size: large;
+      color: white; }
+  .container--iniciarsesion .modal-footer {
+    background-color: grey; }
+    .container--iniciarsesion .modal-footer .btn {
+      background-color: #b22222;
+      color: white; }
 
-.container {
-  height: 80vh;
+.container--precios {
+  height: auto;
   width: auto;
   justify-content: center;
   align-items: stretch;
   font-family: "Roboto", sans-serif; }
-  .container .table {
+  .container--precios .table {
     color: white; }
-  .container thead {
+  .container--precios thead {
     font-size: 18px;
     background-color: #b22222; }
-  .container tbody {
+  .container--precios tbody {
     font-size: 14px; }
 
 .precios--text {
@@ -207,11 +243,16 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: 'Roboto Slab', sans-serif; }
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif; }
 
 h3 {
-  display: inline;
-  text-align: left; }
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center; }
 
 /* Estilo de borde utilziado en varias secciones del sitio */
 .border {
@@ -219,14 +260,17 @@ h3 {
 
 /*Carrousel*/
 #carrusel {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   width: 75%;
   height: 45vh;
   overflow: hidden;
   border-radius: 45px;
   justify-content: center;
-  align-content: center;
-  margin: 2rem;
-  padding: 0.5rem; }
+  /* margin: 2rem;
+    padding: 0.5rem; */ }
   #carrusel .carousel-indicators li {
     border: 0;
     background-color: #fff;
@@ -274,6 +318,37 @@ h3 {
 .navbar-dark .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
+.subtitle {
+  margin-top: 4rem; }
+
+.container--cards .row {
+  margin: auto;
+  padding: auto;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.container--cards .cards--parameter {
+  height: auto;
+  width: auto;
+  margin: 1.5rem;
+  padding: 0.75rem;
+  border: 2px solid #b22222; }
+
+.container--cards .card-title {
+  text-align: center;
+  color: #b22222;
+  font-size: "Roboto", sans-serif;
+  font-size: 14px; }
+
+.container--cards .card-text {
+  text-align: center;
+  color: black;
+  font-size: "Montserrat", sans-serif;
+  font-size: 10px; }
+
 /* ================================================================= */
 /* ================================================================= */
 /* ESTILO PARA HISTORIA */
@@ -290,7 +365,7 @@ h3 {
     width: 60%;
     padding: 0.5rem;
     margin: 2px;
-    border: 2px solid blue; }
+    border: 2px solid #b22222; }
   .articleHistoria p {
     color: white;
     height: 40%;
@@ -306,8 +381,8 @@ h3 {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: flex-start;
+  align-content: flex-start;
   color: white; }
   .articlePreguntas .body__article--question {
     margin: 2px;
@@ -316,7 +391,8 @@ h3 {
     margin: 1rem;
     padding: 0.5rem;
     font-family: "Roboto", sans-serif;
-    font-size: 3rem; }
+    font-size: 3rem;
+    align-items: flex-start; }
   .articlePreguntas p {
     margin: 1rem;
     padding: 0.5rem;

@@ -3,6 +3,7 @@
 
 /* CDN de los fonts utilziados en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 /* Import de las porciones de codigo en SASS */
 @import "_color.scss";
 @import "_general.scss";
@@ -15,6 +16,7 @@
 @import "_precios.scss";
 /* Definición de variables */
 $font-primary: 'Roboto', sans-serif;
+$font-secundary: 'Montserrat', sans-serif;
 $padding-general: 1rem;
 
 /* ================================================================= */
@@ -23,11 +25,11 @@ $padding-general: 1rem;
     from { }
     to {
       /* probar propiedades */
-      transform: skewY(25deg)
+    transform: skewY(25deg)
     }
   } /* configuracion inicial */
-  .animame {
-     animation: animate__rubberBand 1s linear 3s infinite alternate;}
+.animame {
+    animation: animate__rubberBand 1s linear 3s infinite alternate;}
 /* Estilo para elementos en todo el documento  */
 a {
     margin: 10px;  /*Margen a los enlaces para separarlos*/
@@ -39,12 +41,17 @@ h1{
     text-align: center;
 } 
 h2 {
-    font-family: 'Roboto Slab', sans-serif;
- }
+    color: white;
+    font-family: $font-secundary;
+    font-size: 3rem;
+    font-family: $font-primary;
+}
 
 h3{
-    display: inline;
-    text-align: left;
+    color: white;
+    font-family: $font-secundary;
+    font-size: 2rem;
+    text-align: center;
 }
 
 /* Estilo de borde utilziado en varias secciones del sitio */
@@ -54,14 +61,17 @@ h3{
 
 /*Carrousel*/
 #carrusel{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     width: 75%;
     height: 45vh;
     overflow: hidden;
     border-radius: 45px;
     justify-content: center;
-    align-content: center;
-    margin: 2rem;
-    padding: 0.5rem;
+   /* margin: 2rem;
+    padding: 0.5rem; */
 
     .carousel-indicators li{
         border: 0;
@@ -118,6 +128,41 @@ h3{
 .navbar-dark .navbar-toggler  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+.subtitle{
+    margin-top: 4rem;
+}
+
+.container--cards{
+    .row{
+        margin: auto;
+        padding: auto;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+    }
+    .cards--parameter{
+        height: auto;
+        width: auto;
+        margin: 1.5rem;
+        padding: 0.75rem;
+        border: 2px solid #b22222;    
+    }
+    .card-title{
+        text-align: center;
+        color: #b22222;
+        font-size: $font-primary;
+        font-size: 14px;
+    }
+    .card-text{
+        text-align: center;
+        color: black;
+        font-size: $font-secundary;
+        font-size: 10px;
+    }
+}
 /* ================================================================= */
 
 /* ================================================================= */
@@ -135,7 +180,7 @@ h3{
         width: 60%;
         padding: 0.5rem;
         margin: 2px;
-        border: 2px solid blue;    
+        border: 2px solid #b22222;    
     }
     p{
         color: white;
@@ -154,8 +199,8 @@ h3{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: flex-start;
+    align-content: flex-start;
     color: white;
     .body__article--question{
         margin: 2px;
@@ -166,6 +211,7 @@ h3{
         padding: 0.5rem;
         font-family: $font-primary;
         font-size: 3rem;
+        align-items: flex-start;
     }
     p{
         margin: 1rem;

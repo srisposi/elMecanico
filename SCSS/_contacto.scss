@@ -1,6 +1,6 @@
 $font-primary: 'Roboto', sans-serif;
-.container{
-    height: 80vh;
+.container--contacto{
+    height: auto;
     width: auto;
     justify-content: center;
     align-items:stretch;
@@ -12,7 +12,7 @@ $font-primary: 'Roboto', sans-serif;
         align-items: center;
     }
     .form-control{
-        font-size: 14px;
+        font-size: 10px;
         width: 100%;
     }
     section{

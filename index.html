@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Estacionamiento para dejar su auto o vehiculo en un lugar seguro. Atención las 24 horas. Los mejores precios">
     <meta name="keywords" content="Autos, Parking, Estacionamiento, Garage, Cuidar, estacionar, guardar, seguridad">  
-    <link rel="icon" href="favicon/elmecanico.png"><!-- Link del icono -->
+    <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
     <title>El Mecánico - Home</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
@@ -28,7 +28,7 @@
           <!-- logo del negocio -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark header__nav">
       <a class="navbar-brand  href="#">
-        <img  class="img-fluid header__logo" src="img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> 
+        <img  class="img-fluid header__logo" src="./img/elmecanico.jpg" alt="Logitipo" width="50" height="50"> 
       </a>
           <!-- Boton de collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,8 +65,8 @@
   <!-- Principal donde se verá el contenido de cada página con sus secciones y artículos-->
   <main class="container">
     <h1>Estacionamiento "El Meánico"</h1>
-    <section class="col-sm-12 justify-content">
-      <article class="row">
+    <section class="col-sm-12">
+      <article class="row d-flex align-items-center">
         <div id="carrusel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
           <ul class="carousel-indicators">
@@ -119,6 +119,43 @@
           </div>
         </div>
       </article>
+
+      <div class="subtitle">
+        <h2>Nosotros Somos</h2>
+      </div>
+      <article class="container container--cards m-5 d-flex align-items-center">
+        <div class="row">
+          <div  class="col-md-4 cards--parameter">
+            <div class="card" style="width: 18rem;">
+              <img src="img/eze.PNG" class="card-img-top" alt="miembro del estacionamiento">
+              <div class="card-body">
+                <h5 class="card-title">Ezequiel Rosso</h5>
+                <p class="card-text">Analista Tester. Es uno de los miembros de la empresa, con un amplio conocimiento en el aseguramiento de la caldiad de software.</p>
+              </div>
+            </div>
+          </div>
+          <div  class="col-md-4 cards--parameter">
+            <div class="card" style="width: 18rem;">
+              <img src="img/ser.PNG" class="card-img-top" alt="miembro del estacionamiento">
+              <div class="card-body">
+                <h5 class="card-title">Sergio Daniel Risposi</h5>
+                <p class="card-text">Ingeniero de Software. Es uno de los miembros de la empresa, con un importante recorrido en la implementación y desarrollo de software.</p>
+              </div>
+            </div>
+          </div>
+            <div  class="col-md-4 cards--parameter">
+              <div class="card" style="width: 18rem;">
+                <img src="img/dio.PNG" class="card-img-top" alt="miembro del estacionamiento">
+                <div class="card-body">
+                  <h5 class="card-title">Dionel Marmori</h5>
+                  <p class="card-text">Analista Funcional. Es uno de los miembros de la empresa, con un importante recorrido en el conocimiento de los módelos de negocios de estacionamientos y con manejo de equipos.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </article> 
+
+
     </section>  
   </main>    
 

@@ -1,11 +1,11 @@
 $font-primary: 'Roboto', sans-serif;
-.container{
-    height: 80vh;
+.container--registrar{
+    height: auto;
     width: auto;
     justify-content: center;
     align-items:stretch;
     
-    .form-group{
+    .form-control{
         .text--size{
             font-size: 14px;
             color:white;
@@ -25,6 +25,11 @@ $font-primary: 'Roboto', sans-serif;
             background-color: #b22222;
             color: white;
             font-size: 14px;
+        }
+        label{
+            font-family: $font-primary;
+            font-size: 14px;
+            color: white;
         }
     }
     .modal{
@@ -48,13 +53,6 @@ $font-primary: 'Roboto', sans-serif;
                     color: white;
                 }
             }
-    }
-    .row{
-        label{
-            font-family: $font-primary;
-            font-size: 14px;
-            color: white;
-        }
     }
     .collapse{
         .collapse__text--font{
